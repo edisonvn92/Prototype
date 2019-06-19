@@ -1,0 +1,13 @@
+svg rect {
+    fill: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    
+ }
+ 
+svg text {
+    fill: white;
+    font: 20px sans-serif;
+    text-anchor: end;
+ }

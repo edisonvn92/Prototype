@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark" >
+  <ul class="navbar-nav mr-auto">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Charts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/chart/piechart">Pie Chart</a>
+          <a class="dropdown-item"routerLink="/chart/barchart">Bar Chart</a>  
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/chart/graph">Graph</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      
+      <a class="nav-item nav-link" *ngIf="currentUser" (click)="logout()">Logout</a>
+      <a class="nav-item nav-link" *ngIf="!currentUser" routerLink="/register">Register</a>
+      <a class="nav-item nav-link" *ngIf="!currentUser" routerLink="/login">Log in</a>
+      
+    </ul>
+</nav>
+
